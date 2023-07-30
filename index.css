@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.maincontainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(34, 34, 34);
+}
+
+.logo img{
+    height: 70px;
+    display: block;
+}
+
+nav,.links,.others{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    color:white;
+    align-items: center;
+}
+
+nav{
+    width: 100vw;
+    /* position: fixed;
+    top: 0; */
+    background-color: rgb(34, 34, 34);
+    padding: 0 6vw;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+nav li{
+    list-style: none;
+    margin: 0 30px;
+}
+
+.others button{
+    margin-left: 30px;
+    outline: none;
+    border: none;
+    padding: 15px;
+    background-color: white;
+}
+
+.others button:active{
+    background-color: rgb(242, 242, 242);
+}
+
+
+main{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    position: relative;
+    margin-top: 60px;
+    z-index: 900;
+}
+
+main h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 button{
+    font-size:40px;
+    background-color:brown;
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.simg{
+    width: 16vw;
+    position: absolute;
+}
+
+.img1{
+    top:15vh;
+    left: 10vw;
+}
+
+.img2{
+    bottom:15vh;
+    left: 25vw;
+}
+
+.img3{
+    bottom:25vh;
+    right: 20vw;
+}
+
+.scroll{
+    font-size: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    color: white;
+}
+
+
+@media (max-width: 850px) {
+    .links{
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo img{
+        width: 150px;
+    }
+}
+
+@media (max-width:300px) {
+    .others button{
+        display: none;
+    }
+}
